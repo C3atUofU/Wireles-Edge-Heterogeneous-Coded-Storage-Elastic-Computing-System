@@ -1,0 +1,33 @@
+The purpose of this document is to help with the basics of git, python, and linux coding.
+
+Linux:
+	in the linux terminal, here are some common commands that you may need to use:
+		1) "cd:" this means change directory. for instance, "cd Documents" will change your current directory to the documents folder.
+			a) cd ../ will go one directory up
+			b) cd - will go to the previous directory
+			c) cd ~ will go to the "home" directory
+		2) "ls:" this command will list everything in the current directory
+
+Git:
+	In order to download the code to your machine, do the following steps:
+		1) Clone the repository. This can be done by clicking on the green "Code" button in gitlab, then copying the link.
+		2) Next open the terminal (ctrl+alt+t on raspberry pi)
+		3) type the command "git clone <insert the thing you just copied>"
+			a) if you get an error telling you that you don't have git on your machine, then you can type the following command to get git: "sudo apt install git," then type in the password if prompted.
+	
+
+	Some useful commands to know for git (all commands must happen when you are in the git directory):
+		1) "git pull:" this command will pull any changes from the internet
+		2) "git add <path to file>:" this command will add this file to git
+		3) "git add u-" this command will add all changes you have made to the files in the repository
+		4) "git commit -m <message>" this saves all the changes you have added. It will bookmark the progress you have made. this is a good command to use when you make a working change.
+		5) "git push" this will add your committed changes to the remote, pushing it to the internet.
+
+
+Python: 
+
+	I wrote a small test code in elastic. It is called main.py. You can open it with a textt editor to see what the code looks like. If you want to run the code,  do the following:
+		1) cd into the elastic directory
+		2) run the command "python3 main.py"
+
+	In general, the command to run a python script in the command line is "python3 <path/to/the/file.py> <any arguments the file expects>.

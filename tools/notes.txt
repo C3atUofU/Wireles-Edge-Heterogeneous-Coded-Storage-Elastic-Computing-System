@@ -1,0 +1,9 @@
+-mcast holds all of the node code, not the Node folder.
+-We don't need a shuffle scheme. We just need an aggragator and a node.
+-mcast send is the method to send data. it is UDP, so you give an IP sand a Port. 
+-AggrCode/aggr_server.py is a tcp implementation of sending. This is the device that listens to all the devices.
+-AggrCode/aggr_client.py is the device that sends to all the devices.
+-Pickle can serialize a python object to preserve it as an object. This can only be done on TCP.
+-mcast/node_server is really simple. It has all the correct IP address.
+-mcast/node_client and node_server are parallel to aggr_client and aggr_server.
+-ignore tensorflow and dataset

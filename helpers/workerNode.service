@@ -1,0 +1,11 @@
+[Unit]
+Description=workerNode
+After=multi-user.target
+
+[Service]
+ExecStart=python3 /usr/bin/node.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
